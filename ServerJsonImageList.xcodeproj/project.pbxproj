@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		3259DCF9285EF33F0004D572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3259DCF8285EF33F0004D572 /* AppDelegate.swift */; };
 		3259DCFB285EF33F0004D572 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3259DCFA285EF33F0004D572 /* SceneDelegate.swift */; };
-		3259DCFD285EF33F0004D572 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3259DCFC285EF33F0004D572 /* ViewController.swift */; };
 		3259DD00285EF33F0004D572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3259DCFE285EF33F0004D572 /* Main.storyboard */; };
 		3259DD02285EF3400004D572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3259DD01285EF3400004D572 /* Assets.xcassets */; };
 		3259DD05285EF3400004D572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3259DD03285EF3400004D572 /* LaunchScreen.storyboard */; };
+		3259DD2D285EF6150004D572 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3259DD2C285EF6150004D572 /* Movie.swift */; };
+		3259DD2F285EF6580004D572 /* MovieDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3259DD2E285EF6580004D572 /* MovieDTO.swift */; };
+		3259DD31285EF6D60004D572 /* QueryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3259DD30285EF6D60004D572 /* QueryModel.swift */; };
+		3259DD33285EF6E60004D572 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3259DD32285EF6E60004D572 /* TableViewController.swift */; };
+		3259DD35285EFCCD0004D572 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3259DD34285EFCCD0004D572 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3259DCF5285EF33F0004D572 /* ServerJsonImageList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServerJsonImageList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3259DCF8285EF33F0004D572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3259DCFA285EF33F0004D572 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3259DCFC285EF33F0004D572 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3259DCFF285EF33F0004D572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3259DD01285EF3400004D572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3259DD04285EF3400004D572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3259DD06285EF3400004D572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3259DD2C285EF6150004D572 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		3259DD2E285EF6580004D572 /* MovieDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDTO.swift; sourceTree = "<group>"; };
+		3259DD30285EF6D60004D572 /* QueryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryModel.swift; sourceTree = "<group>"; };
+		3259DD32285EF6E60004D572 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3259DD34285EFCCD0004D572 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,15 @@
 			children = (
 				3259DCF8285EF33F0004D572 /* AppDelegate.swift */,
 				3259DCFA285EF33F0004D572 /* SceneDelegate.swift */,
-				3259DCFC285EF33F0004D572 /* ViewController.swift */,
 				3259DCFE285EF33F0004D572 /* Main.storyboard */,
 				3259DD01285EF3400004D572 /* Assets.xcassets */,
 				3259DD03285EF3400004D572 /* LaunchScreen.storyboard */,
 				3259DD06285EF3400004D572 /* Info.plist */,
+				3259DD2C285EF6150004D572 /* Movie.swift */,
+				3259DD2E285EF6580004D572 /* MovieDTO.swift */,
+				3259DD30285EF6D60004D572 /* QueryModel.swift */,
+				3259DD32285EF6E60004D572 /* TableViewController.swift */,
+				3259DD34285EFCCD0004D572 /* TableViewCell.swift */,
 			);
 			path = ServerJsonImageList;
 			sourceTree = "<group>";
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3259DCFD285EF33F0004D572 /* ViewController.swift in Sources */,
+				3259DD2F285EF6580004D572 /* MovieDTO.swift in Sources */,
+				3259DD33285EF6E60004D572 /* TableViewController.swift in Sources */,
 				3259DCF9285EF33F0004D572 /* AppDelegate.swift in Sources */,
 				3259DCFB285EF33F0004D572 /* SceneDelegate.swift in Sources */,
+				3259DD2D285EF6150004D572 /* Movie.swift in Sources */,
+				3259DD35285EFCCD0004D572 /* TableViewCell.swift in Sources */,
+				3259DD31285EF6D60004D572 /* QueryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +319,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,7 +346,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
